@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Mad Libs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Mad Libs Generator</h1>
+        
+        <!-- Input Form -->
+        <div class="input-section">
+            <input type="text" id="topic" placeholder="Enter a theme (e.g. space pirates)">
+            
+            <div class="word-inputs">
+                <input type="text" placeholder="Adjective">
+                <input type="text" placeholder="Noun">
+                <input type="text" placeholder="Verb">
+                <input type="text" placeholder="Weird object">
+                <input type="text" placeholder="Exclamation">
+            </div>
+            
+            <button id="generateBtn">Generate Story!</button>
+        </div>
+
+        <!-- Story Display -->
+        <div class="story-section hidden">
+            <div id="storyOutput"></div>
+            <button id="resetBtn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="madLibScript.js"></script>
+</body>
+</html>
